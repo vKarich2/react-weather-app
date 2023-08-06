@@ -127,8 +127,8 @@ const App = () => {
         {loading ? <div className='w-full h-full flex justify-center items-center '><ImSpinner8 className='text-white text-5xl animate-spin' /></div> : 
           <div>
             <div className='flex items-center gap-x-5'>
-              <div className='w-40 h-40'>{icon}</div>
-              <div>
+              <div className='w-[150px] h-[150px]'>{icon}</div>
+              <div className='flex flex-col mb-[30px]'>
                 <div className='text-2xl font-semibold'>{data.name}, {data.sys.country}</div>
                 <div>{date.getUTCDate()}/{date.getUTCMonth() + 1}/{date.getUTCFullYear()}</div>
               </div>
