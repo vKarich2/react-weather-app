@@ -45,6 +45,7 @@ const App = () => {
     }
 
     input.value = ''; 
+    input.blur();
 
     e.preventDefault();
   };
